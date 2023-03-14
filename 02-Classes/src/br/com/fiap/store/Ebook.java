@@ -4,8 +4,6 @@ public class Ebook {
 
 	String nome;
 	
-	String endereco;
-	
 	String isbn;
 	
 	String genero;

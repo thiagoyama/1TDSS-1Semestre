@@ -2,26 +2,50 @@ package br.com.fiap.store;
 
 public class Teste {
 
-	//Criar o método que começa a execucao do programa Java
-	//main -> CTRL + espaço
+	//Criar o mï¿½todo que comeï¿½a a execucao do programa Java
+	//main -> CTRL + espaï¿½o
 	public static void main(String[] args) {
 		
 		//Criar um objeto do tipo Editora (instanciar a classe)
 		Editora churros = new Editora();
-		//Colocar informações dentro do objeto
+		//Colocar informaï¿½ï¿½es dentro do objeto
 		churros.nome = "Editora Abril";
 		churros.endereco = "Marginal Tiete";
 		churros.cnpj = "132.131.323/0001-12";
 		
 		//Criar um outro objeto do tipo Editora
-		
-		//Colocar informações dentro do objeto
-		
+		Editora atlas = new Editora();
+		//Colocar informacoes dentro do objeto
+		atlas.cnpj = "456.545.123/0001-54";
+		atlas.nome = "Editora Atlas";
+		atlas.endereco = "Av Aclimacao";
 		
 		//Criar um objeto do tipo Ebook
-		//ebook.editora = abril;
+		Ebook livroVirtual = new Ebook();
+		//Colocar informacoes dentro do objeto
+		livroVirtual.nome = "Java Como Programar";
+		livroVirtual.idioma = "Portugues";
+		livroVirtual.genero = "Informatica";
+		livroVirtual.isbn = "1321123";
+		livroVirtual.rating = 5;
+		livroVirtual.valor = 197.5;
+		livroVirtual.resumo = "Ensina programar tudo de Java";
+		livroVirtual.quantidadePagina = 1000;
+		livroVirtual.editora = atlas;
 		
-		//Colocar informações dentro do objeto
+		//Exibir o nome da editora que esta na variavel churros
+		//sysout -> CTRL + espaco
+		System.out.println(churros.nome);
+		
+		//Exibir o nome, valor e o nome da editora do Ebook
+		System.out.println(livroVirtual.nome + " " + 
+				livroVirtual.valor + " " + livroVirtual.editora.nome);
 		
 	}
 }
+
+
+
+
+
+
