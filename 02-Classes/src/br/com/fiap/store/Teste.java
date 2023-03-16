@@ -16,9 +16,9 @@ public class Teste {
 		//Criar um outro objeto do tipo Editora
 		Editora atlas = new Editora();
 		//Colocar informacoes dentro do objeto
-		atlas.cnpj = "456.545.123/0001-54";
-		atlas.nome = "Editora Atlas";
-		atlas.endereco = "Av Aclimacao";
+		atlas.nome = "Editora Abril";
+		atlas.endereco = "Marginal Tiete";
+		atlas.cnpj = "132.131.323/0001-12";
 		
 		//Criar um objeto do tipo Ebook
 		Ebook livroVirtual = new Ebook();
