@@ -9,7 +9,12 @@ public class Terminal {
 		//Instanciar um produto
 		Produto p = new Produto();
 		
-		//Definir o nome do produto
+		//Ajustar para utilizar os métodos set
+		p.setNome("CD");
+		p.setId(5);
+		
+		
+		//Exibir os atributos do produto
 		
 		
 	}
