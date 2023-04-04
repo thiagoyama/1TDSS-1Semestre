@@ -9,12 +9,12 @@ public class Produto {
 	private int quantidade;
 	private boolean promocao;
 	
-	double calcularLucro() {
+	public double calcularLucro() {
 		double churros = precoVenda - precoCusto;
 		return churros;
 	}
 	
-	void atualizarEstoque(int qtd) {
+	public void atualizarEstoque(int qtd) {
 		quantidade += qtd;
 	}
 	
@@ -35,7 +35,7 @@ public class Produto {
 		this.nome = nome;
 	}
 	
-	public double precoCusto() {
+	public double getPrecoCusto() {
 		return precoCusto;
 	}
 	
