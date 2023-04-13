@@ -4,7 +4,17 @@ public class Fabricante {
 
 	private String nome;
 	private String cnpj;
-
+	
+	//Criar um construtor que recebe o nome e cnpj
+	public Fabricante(String nome, String cnpj) {
+		this.nome = nome;
+		this.cnpj = cnpj;
+	}
+	
+	public Fabricante(String nome) {
+		this.nome = nome;
+	}
+	
 	public String getNome() {
 		return nome;
 	}

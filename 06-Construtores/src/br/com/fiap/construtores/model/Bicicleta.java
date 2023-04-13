@@ -8,8 +8,21 @@ public class Bicicleta {
 	private float peso;
 	private Fabricante fabricante;
 	
+	//Implementar um construtor que recebe o aro e modelo
+	public Bicicleta(int aro, String modelo) {
+		this.aro = aro;
+		this.modelo = modelo; 
+	}
+	
 	//Implementar um construtor que recebe todos os atributos
-
+	public Bicicleta(int aro, String modelo, float peso, Fabricante fabricante) {
+		this(aro, modelo); //Chama o construtor com aro e modelo como parametros
+		//this.aro = aro;
+		//this.modelo = modelo;
+		this.peso = peso;
+		this.fabricante = fabricante;
+	}
+	
 	public String retornarDetalhes() {
 		return modelo + " Aro: " + aro + " Peso: " + peso;
 	}
