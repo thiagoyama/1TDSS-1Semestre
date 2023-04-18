@@ -10,13 +10,22 @@ public class Funcionario {
 	
 	private double salario;
 
+	public Funcionario() {
+	}
+	
+	public Funcionario(long matricula) {
+		this.matricula = matricula;
+	}
+	
 	public Funcionario(long matricula, String nome) {
 		this.nome = nome;
 		this.matricula = matricula;
 	}
-
-	public Funcionario(long matricula) {
+	
+	public Funcionario(long matricula, String nome, Profissao profissao) {
+		this.nome = nome;
 		this.matricula = matricula;
+		this.profissao = profissao;
 	}
 
 	public String getNome() {
