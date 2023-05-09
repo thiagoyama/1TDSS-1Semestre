@@ -11,9 +11,15 @@ public class Pessoa {
 	private Endereco endereco;
 	
 	public Pessoa() {
-		super();
 	}
-	
+
+	public Pessoa(int codigo, String nome, String cpf, Endereco endereco) {
+		this.codigo = codigo;
+		this.nome = nome;
+		this.cpf = cpf;
+		this.endereco = endereco;
+	}
+
 	public void respirar() {
 		
 	}
