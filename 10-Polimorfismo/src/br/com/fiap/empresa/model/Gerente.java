@@ -6,6 +6,24 @@ public class Gerente extends Funcionario {
 	
 	private String beneficios;
 	
+	//Sobrescrever o método aumentar salário por nível
+	//Junior 10000, Pleno 14000, Senior 30000
+	public boolean aumentarSalario(String nivel) {
+		boolean aumentou = false;
+		if (nivel.equalsIgnoreCase("junior") && salario < 10000) {
+			salario = 10000;
+			aumentou = true;
+		} else if (nivel.equalsIgnoreCase("pleno") && salario < 14000) {
+			salario = 14000;
+			aumentou = true;
+		} else if (nivel.equalsIgnoreCase("senior") && salario < 30000) {
+			salario = 30000;
+			aumentou = true;
+		}
+		return aumentou;
+	}
+	
+	
 	public Gerente() {
 	}
 	

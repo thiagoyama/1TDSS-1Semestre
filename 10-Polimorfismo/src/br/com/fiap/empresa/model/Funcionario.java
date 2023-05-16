@@ -4,7 +4,7 @@ public class Funcionario {
 
 	private int id;
 	private String nome;
-	private double salario;
+	protected double salario;
 	private String cpf;
 	private String nivel;
 	
@@ -21,7 +21,18 @@ public class Funcionario {
 	
 	//Aumenta o salário: Junior (2000), Pleno (5000), Senior (8000)
 	public boolean aumentarSalario(String nivel) {
-		
+		boolean aumentou = false;
+		if (nivel.equalsIgnoreCase("junior") && salario < 2000) {
+			salario = 2000;
+			aumentou = true;
+		} else if (nivel.equalsIgnoreCase("pleno") && salario < 5000) {
+			salario = 5000;
+			aumentou = true;
+		} else if (nivel.equalsIgnoreCase("senior") && salario < 8000) {
+			salario = 8000;
+			aumentou = true;
+		}
+		return aumentou;
 	}
 
 	public Funcionario() {
