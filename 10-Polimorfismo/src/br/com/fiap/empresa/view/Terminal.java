@@ -15,13 +15,14 @@ public class Terminal {
 				5000, "56.213.654-55", "Pleno");
 		
 		//Aumentar o salario do gerente em 5%
-		ronqui.aumentarSalario("senior");
+		ronqui.aumentarSalario(50);
 		
 		//Promover o funcionario para Senior
 		ale.aumentarSalario("senior");
 		
 		//Exibir o salario do gerente e do funcionario
 		System.out.println("Salário Gerente: " + ronqui.getSalario());
+		System.out.println("Bonus: " + ronqui.getBonus());
 		System.out.println("Salário Fun: " + ale.getSalario());
 		
 		//Qual método ele utiliza? Gerente ou Funcionario?

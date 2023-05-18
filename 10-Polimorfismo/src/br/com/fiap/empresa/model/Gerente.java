@@ -8,6 +8,7 @@ public class Gerente extends Funcionario {
 	
 	//Sobrescrever o método aumentar salário por nível
 	//Junior 10000, Pleno 14000, Senior 30000
+	@Override
 	public boolean aumentarSalario(String nivel) {
 		boolean aumentou = false;
 		if (nivel.equalsIgnoreCase("junior") && salario < 10000) {
@@ -23,6 +24,13 @@ public class Gerente extends Funcionario {
 		return aumentou;
 	}
 	
+	//Sobrescrever o método aumentarSalario que recebe o double
+	//Aumentar o salario de acordo com porcentagem e aumentar o bonus com a %
+	@Override
+	public void aumentarSalario(double porcentagem) {
+		bonus *= porcentagem/100 + 1;
+		super.aumentarSalario(porcentagem); //Chamando o método do Funcionario (Pai)
+	}
 	
 	public Gerente() {
 	}
