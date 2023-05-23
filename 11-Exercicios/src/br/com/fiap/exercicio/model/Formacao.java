@@ -2,12 +2,16 @@ package br.com.fiap.exercicio.model;
 
 public class Formacao {
 
-	private String descricao;
+	protected String descricao;
 	private int periodo;
 	private double mensalidade;
-	private int duracao;
+	protected int duracao;
 
 	public void definirDuracao() {
+//		//valida se a instancia é do tipo Medio
+//		if (this instanceof Medio) {
+//			duracao = 24;
+//		}
 	}
 
 	public double calcularMedia(double global1, double global2) {
@@ -34,9 +38,21 @@ public class Formacao {
 		}
 		return media;
 	}
+	
+	public String toString() {
+		return descricao + " Periodo: " + periodo 
+				+ " Mensalidade: " + mensalidade + 
+				" Duracao: " + duracao;
+	}
 
 	// Construtores
 	public Formacao() {
+		super();
+	}
+	
+	public Formacao(String descricao, int periodo) {
+		this.descricao = descricao;
+		this.periodo = periodo;
 	}
 
 	public Formacao(String descricao, int periodo, double mensalidade, int duracao) {
